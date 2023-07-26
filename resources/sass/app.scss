@@ -1,0 +1,94 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.carousel,
+.carousel-inner {
+    border-radius: 14px;
+}
+
+.card {
+    border-radius: 14px;
+    border-color: transparent;
+    box-shadow: 0 1px 6px 0 rgba(49, 53, 59, 0.12);
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-liga {
+    .image-logo {
+        height: 120px;
+        width: fit-content;
+    }
+}
+
+.card-product {
+    .image-product {
+        height: 185px;
+        width: fit-content;
+
+        &.image-product--large {
+            height: 360px;
+
+            @media (min-width: 992px) {
+                height: 465px;
+            }
+        }
+    }
+}
+
+.pagination {
+    margin-bottom: 0;
+}
+
+.navbar {
+    height: 65px;
+
+    @media (min-width: 992px) {
+        height: 80px;
+    }
+}
+
+.table > :not(caption) > * > * {
+    background-color: #fff;
+}
+
+.form-control {
+    &.form-control--number {
+        text-align: center;
+        width: 15%;
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
